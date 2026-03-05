@@ -1,0 +1,15 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: producer
+
+  kafka:
+    bootstrap-servers: 3.39.191.209:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+
+logging:
+  level:
+    org.example.producer: debug
