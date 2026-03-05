@@ -1,0 +1,17 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: consumer
+
+  kafka:
+    bootstrap-servers: 3.39.191.209:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: abcd-group-1 # ?? ???? ???? ???
+
+logging:
+  level:
+    com.example.consumer: debug
